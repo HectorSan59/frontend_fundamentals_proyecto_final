@@ -6,6 +6,12 @@
     <meta charset="UTF-8" />
     <meta name="description" content="Mi journal de todos los libros que he leído y los que voy a leer.">
     <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -19,9 +25,9 @@
             <a href="#">Lista de deseados</a>
         </nav>
 
-        <div>
+        <div class="container-icons">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
                 class="icon icon-tabler icons-tabler-outline icon-tabler-search">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                 <path d="M3 10a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
@@ -29,7 +35,7 @@
             </svg>
 
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
                 class="icon icon-tabler icons-tabler-outline icon-tabler-user-circle">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                 <path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
@@ -37,67 +43,105 @@
                 <path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855" />
             </svg>
         </div>
+
     </header>
 
     <main>
-        <section>
-            <img src="src/mrmercedes.jpg" width="200px" alt="Imagen de la lectura actual">
-            <h2>ACTUALMENTE LEYENDO</h2>
-            <h3>Mr. Mercedes</h3>
-            <h4>by Stephen King</h4>
+        <section class="container-book">
+            <div class="portada">
+                <img src="src/mrmercedes.jpg" width="200px" alt="Imagen de la lectura actual">
+            </div>
 
-            <span>Page 219 of 493</span>
-            <span>44%</span>
+            <div class="details">
+                <h2>ACTUALMENTE LEYENDO</h2>
+                <h3>Mr. Mercedes</h3>
+                <h4>by Stephen King</h4>
 
-            <progress max="100" value="44"></progress>
+                <div class="seccion-progreso">
+                    <div class="textos-progreso">
+                        <span>Page 219 of 493</span>
+                        <span>44%</span>
+                    </div>
+                    <div class="progress">
+                        <progress max="100" value="44"></progress>
+                    </div>
+                </div>
 
-            <button>Continuar Leyendo</button>
-            <button>Añadir anotación</button>
+                <div class="container-buttons">
+                    <button class="btn-continuar">Continuar Leyendo</button>
+                    <button class="btn-anotacion">Añadir anotación</button>
+                </div>
+            </div>
         </section>
 
-        <section>
-            <h2>Reseñas Recientes</h2>
+        <section class="container-review">
+            <div class="header-review">
+                <h2>Reseñas Recientes</h2>
 
-            <a href="">Ver Reseñas</a>
+                <a href="">Ver Reseñas</a>
+            </div>
 
-            <article>
-                <img src="src/221163.jpeg" width="100" alt="Reseña del último libro">
+            <div class="container-article">
+                <article class="container-article1">
+                    <div class="article-portada">
+                        <img src="src/221163.jpeg" width="100" alt="Reseña del último libro">
+                    </div>
 
-                <h3>22/11/63</h3>
-                <h4>by Stephen King</h4>
-                <p>★★★★☆</p>
+                    <div class="article-details">
+                        <p>★★★★☆</p>
+                        <h3>22/11/63</h3>
+                        <h4>by Stephen King</h4>
 
-                <p>Narra la historia de Jake Epping, un profesor de inglés que viaja al pasado a través de un portal en
-                    un
-                    restaurante para intentar evitar el asesinato del presidente John F. Kennedy, descubriendo que el
-                    pasado
-                    se resiste a ser cambiado y que las consecuencias de alterar la historia pueden ser devastadoras.
-                </p>
-            </article>
+                        <p>Narra la historia de Jake Epping, un profesor de inglés que viaja al pasado a través de un
+                            portal
+                            en
+                            un
+                            restaurante para intentar evitar el asesinato del presidente John F. Kennedy, descubriendo
+                            que
+                            el
+                            pasado
+                            se resiste a ser cambiado y que las consecuencias de alterar la historia pueden ser
+                            devastadoras.
+                        </p>
 
-            <article>
-                <h3>1984</h3>
-                <h4>by George Orwell</h4>
-                <p>★★★☆☆</p>
+                        <span>9 Junio, 2026</span>
+                    </div>
+                </article>
 
-                <p>obra maestra de la ficción distópica. La historia sigue a Winston Smith en un Londres dominado por el
-                    Gran Hermano, donde el control mental, la vigilancia total y la alteración de la historia buscan
-                    anular
-                    la libertad humana.</p>
-            </article>
+                <article class="container-article2">
+                    <p>★★★☆☆</p>
+                    <h3>1984</h3>
+                    <h4>by George Orwell</h4>
+
+                    <p>Obra maestra de la ficción distópica. La historia sigue a Winston Smith en un Londres dominado
+                        por el
+                        Gran Hermano, donde el control mental, la vigilancia total y la alteración de la historia buscan
+                        anular
+                        la libertad humana.</p>
+                    <span>20 Julio, 2026</span>
+                </article>
+            </div>
         </section>
     </main>
 
     <footer>
-        <small>"A room without books is like a body without a soul." - Cicero</small>
+        <div class="container-footer">
 
-        <div>
-            <a href="#">About</a>
-            <a href="#">Privacy</a>
-            <a href="#">Contact</a>
+            <div class="container-small">
+                <small>"A room without books is like a body without a soul." - Cicero</small>
+            </div>
+
+
+            <div class="container-anchor">
+                <a href="">About</a>
+                <a href="">Privacy</a>
+                <a href="">Contact</a>
+            </div>
+
+            <div class="container-h6">
+                <h6>Página en blanco</h6>
+            </div>
         </div>
-
-        <h6>Página en blanco</h6>
     </footer>
 </body>
 
