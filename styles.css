@@ -358,3 +358,12 @@ article {
     font-weight: 400;
     color: rgb(32, 32, 32);
 }
+
+@media (max-width: 720px) {
+    .container-article {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
